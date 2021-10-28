@@ -1,3 +1,8 @@
-void main(List<String> arguments) {
-  print('Hello world!');
+
+
+main() {
+  DateTime dia = DateTime.now();
+  print(dia);
 }
+
+
