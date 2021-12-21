@@ -63,26 +63,25 @@ class _MyLoginPageState extends State<MyLoginPage> {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 12),
-                        child: TextInput(
-                          hint: 'Email',
-                          icon: Icons.alternate_email_rounded,
-                          obscure: false,
-                          inputType: TextInputType.emailAddress,
-                          inputAction: TextInputAction.next,
-                        )
-                      ),
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          child: TextInput(
+                            hint: 'Email',
+                            icon: Icons.alternate_email_rounded,
+                            obscure: false,
+                            inputType: TextInputType.emailAddress,
+                            inputAction: TextInputAction.next,
+                          )),
                       PasswordInput(
-                          icon: Icons.visibility_off_outlined,
-                          hint: 'Password',
-                          obscure: true,
-                          inputAction: TextInputAction.done,
+                        icon: Icons.visibility_off_outlined,
+                        hint: 'Password',
+                        obscure: true,
+                        inputAction: TextInputAction.done,
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 12),
                         child: Text(
                           'Esqueceu a senha?',
-                           style: bodyText,
+                          style: bodyText,
                         ),
                       ),
                     ],
@@ -95,22 +94,22 @@ class _MyLoginPageState extends State<MyLoginPage> {
                       child: Container(
                         width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: (){
-                            Navigator.of(context).push(
-                                MaterialPageRoute(builder: (context) => MyApp()));
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => MyApp()));
                           },
                           child: Text(
                             'Login',
                             style: bodyText,
                           ),
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Colors.red),
-                            textStyle: MaterialStateProperty.all(bodyText),
-                            shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.red),
+                              textStyle: MaterialStateProperty.all(bodyText),
+                              shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(18.0),
-                            )
-                            )
-                          ),
+                              ))),
                         ),
                       ),
                     ),
