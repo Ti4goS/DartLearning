@@ -6,10 +6,7 @@ class PassWordObscure extends StatelessWidget {
   final bool obscure;
   @override
   Widget build(BuildContext context) {
-    if(obscure){
-      return const Icon(Icons.visibility_off_outlined);
-    }else{
-      return const Icon(Icons.remove_red_eye_outlined);
-    }
+    return obscure ? const Icon(Icons.visibility_off_outlined) : const Icon(Icons.remove_red_eye_outlined);
+    
   }
 }

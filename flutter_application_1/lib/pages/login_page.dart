@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widgets/password.dart';
 
@@ -32,15 +31,18 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 200,
                   height: 200,
+                  width: 200,
                   decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      image: DecorationImage(
-                          image: NetworkImage(
-                              "https://image.freepik.com/fotos-gratis/jovem-em-uma-camisa-trabalhando-no-laptop-roxo_155003-14131.jpg"),
-                          fit: BoxFit.fill)),
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: NetworkImage(
+                          "https://image.freepik.com/fotos-gratis/jovem-em-uma-camisa-trabalhando-no-laptop-roxo_155003-14131.jpg"),
+                    ),
+                  ),    
                 ),
+                const SizedBox(height: 10,),
                 TextField(
                     onChanged: (text) {
                       email = text;
