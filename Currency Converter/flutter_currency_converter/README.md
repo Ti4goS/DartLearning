@@ -10,10 +10,10 @@ Primeiro projeto desenvolvido em flutter por minha pessoa com objetivos de prati
 
 ### TaskList:
 
--[x] Criar pagina de conversão de moedas;
--[] Criar pagina para selecionar moedas;
--[] Implementar troca entre temas Dark & Light;
--[] Implementar atualização das moedas via API;
--[] Utilizar de um Banco de Dados para armazenar as URLs das bandeiras;
+- [x] Criar pagina de conversão de moedas;
+- [ ] Criar pagina para selecionar moedas;
+- [ ] Implementar troca entre temas Dark & Light;
+- [ ] Implementar atualização das moedas via API;
+- [ ] Utilizar de um Banco de Dados para armazenar as URLs das bandeiras;
 
 Caso apareça mais algum objetivo durante o desenvolvimento será exibido aqui.
