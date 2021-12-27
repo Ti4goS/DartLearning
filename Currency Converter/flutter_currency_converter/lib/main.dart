@@ -8,11 +8,15 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
+  static bool isDarkTheme =  false;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      themeMode: isDarkTheme ? ThemeMode.dark : ThemeMode.light,
       theme: ThemeData(
           primaryColorLight: AppColors.primaryColor,
+          scaffoldBackgroundColor: isDarkTheme ? Colors.black : Colors.white,
           bottomAppBarColor: const Color(0xFFDADCE2),
       ),    
       routes: {
